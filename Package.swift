@@ -11,7 +11,7 @@ let package = Package(
         .library(name: "SQLiteKit", targets: ["SQLiteKit"]),
     ],
     dependencies: [
-        .package(path: "/Users/jason/OpenSource/db/vapor/sql-kit"),
+        .package(url: "https://github.com/wildthink/sql-kit", .branch("main")),
     ],
     targets: [
         .target(name: "SQLiteKit", dependencies: [
